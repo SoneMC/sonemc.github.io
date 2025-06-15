@@ -1,4 +1,4 @@
-// 1000ms = 1 second
+// 1000ms    = 1 second
 // 60000ms = 1 minute
 import { maintenanceConfig } from '../data/maintenance.js';
 
@@ -24,7 +24,9 @@ function loadMaintenanceInfo() {
                 let value = item.value;
                 
                 if (value === 'format-start-time') {
-                    value = startTime.toLocaleString();
+                    value = formatToMonthDayYear(startTime);
+                } else if (value === 'format-end-time') {
+                    value = formatToMonthDayYear(endTime);
                 } else if (value === 'format-progress') {
                     value = `${config.progress}%`;
                 }
@@ -329,6 +331,13 @@ function checkMaintenanceStatus() {
     }
 }
 
-// Check maintenance status every minute
 setInterval(checkMaintenanceStatus, 60000);
-checkMaintenanceStatus(); // Check immediately
+checkMaintenanceStatus();
+
+function formatToMonthDayYear(date) {
+    const d = new Date(date);
+    const month = d.toLocaleString('en-US', { month: 'long' });
+    const day = d.getDate();
+    const year = d.getFullYear();
+    return `${month} ${day}, ${year}`;
+}
