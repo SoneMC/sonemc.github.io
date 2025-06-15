@@ -10,7 +10,7 @@ export const maintenanceConfig = {
         type: 'Active Development',
     },
     
-    progress: 15, 
+    progress: 30, 
     
     // Status messages
     statusMessages: {
