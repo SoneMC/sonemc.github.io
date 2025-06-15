@@ -5,7 +5,7 @@ export const maintenanceConfig = {
     // Maintenance information
     info: {
         startTime: '2025-06-15T20:21',
-        estimatedEnd: '2025-06-20T21:00:00',
+        estimatedEnd: '2025-06-20T23:00:00',
         reason: 'Project SoneMC2 is under development.',
         type: 'Active Development',
     },
