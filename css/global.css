@@ -3,6 +3,7 @@
     --primary-color: #8b5cf6;
     --secondary-color: #ec4899;
     --accent-color: #f59e0b;
+    --beta-color: #eab308;
     --bg-primary: #0a0a0f;
     --bg-secondary: #1a1a23;
     --bg-tertiary: #2a2a3a;
@@ -70,10 +71,11 @@ a {
     color: var(--primary-color);
     text-decoration: none;
     transition: all 0.3s ease;
+    color: var(--text-primary); /* 6.15 .25 23:29 */
 }
 
 a:hover {
-    color: var(--secondary-color);
+    color: var(--text-primary);
 }
 
 /* Container */
