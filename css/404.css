@@ -1,0 +1,122 @@
+.error-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(ellipse at center, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+    padding: 2rem;
+}
+
+.error-content {
+    text-align: center;
+    max-width: 600px;
+    animation: fadeIn 1s ease-out;
+}
+
+.error-title {
+    font-size: 8rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    animation: slideIn 1s ease-out 0.3s both;
+    font-weight: 900;
+    text-shadow: 0 0 30px rgba(139, 92, 246, 0.5);
+}
+
+.error-message {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    line-height: 1.6;
+    animation: slideIn 1s ease-out 0.6s both;
+}
+
+.error-suggestions {
+    background: var(--bg-secondary);
+    border-radius: 1rem;
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+    margin-bottom: 3rem;
+    text-align: left;
+    animation: slideIn 1s ease-out 0.9s both;
+}
+
+.error-suggestions h3 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.error-suggestions ul {
+    list-style: none;
+    color: var(--text-secondary);
+}
+
+.error-suggestions ul li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: var(--bg-tertiary);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.error-suggestions ul li:hover {
+    background: rgba(139, 92, 246, 0.1);
+    transform: translateX(5px);
+}
+
+.error-suggestions ul li i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    width: 20px;
+    text-align: center;
+}
+
+.error-suggestions ul li a {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.error-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: slideIn 1s ease-out 1.2s both;
+}
+
+@media (max-width: 768px) {
+    .error-container {
+        padding: 1rem;
+    }
+    
+    .error-content {
+        max-width: 100%;
+    }
+    
+    .error-title {
+        font-size: 4rem;
+    }
+    
+    .error-message {
+        font-size: 1rem;
+    }
+    
+    .error-suggestions {
+        padding: 1.5rem;
+    }
+    
+    .error-suggestions ul li {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .error-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+}
