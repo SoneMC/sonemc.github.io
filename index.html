@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>SoneMC - Home</title>
+
+  <!-- Essential Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Viewport & Mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#8b5cf6"> 
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="SoneMC - Minecraft plugins and cool community projects.">
+  <meta name="keywords" content="Minecraft, plugins, SoneMC, Wejkey, development, servers, downloads, gaming, community, Java, Bukkit, Spigot, Paper, Purpur, tools, moderation, fast, safe, 1.18, 1.19, 1.20, 1.21">
+  <meta name="author" content="SoneMC Team">
+  <meta name="robots" content="index, follow">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="copyright" content="© 2025 SoneMC. All rights reserved.">
+
+  <!-- Open Graph (for Discord/social sharing) -->
+  <meta property="og:title" content="SoneMC - Minecraft Plugins">
+  <meta property="og:description" content="Developing some (maybe) useful Minecraft plugins!">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/215273978?v=4">
+  <meta property="og:url" content="https://sonemcpl.pages.dev/">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/215273978?v=4">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="https://avatars.githubusercontent.com/u/215273978?v=4" alt="SoneMC Logo" style="width: 25px; height: 25px;">
+                <a href="index.html"><span>SoneMC</span></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="plugins.html" class="nav-link">Plugins</a></li>
+                <li><a href="changelog.html" class="nav-link">Changelog</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">SoneMC</span>
+                </h1>
+                <p class="hero-subtitle">Making <span class="gradient-text">cool</span> Minecraft plugins</p>
+                <div class="hero-buttons">
+                    <a href="plugins.html" class="btn btn-primary">
+                        <i class="fas fa-download"></i>
+                        Browse Plugins
+                    </a>
+                    <a href="#about" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            <div class="hero-animation">
+                <div class="floating-cubes">
+                    <div class="cube"></div>
+                    <div class="cube"></div>
+                    <div class="cube"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid" id="stats-container">
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="section-title">About SoneMC</h2>
+                <div class="about-content" id="about-content">
+                </div>
+            </div>
+        </section>
+
+        <section class="plugins-preview">
+            <div class="container">
+                <h2 class="section-title">Featured Plugins</h2>
+                <div class="plugins-grid" id="featured-plugins">
+                </div>
+                <div class="section-footer">
+                    <a href="plugins.html" class="btn btn-outline">
+                        <i class="fas fa-arrow-right"></i>
+                        View All Plugins
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer-container">
+    </footer>
+
+    <script src="js/global.js" type="module"></script>
+    <script src="js/home.js" type="module"></script>
+</body>
+</html>

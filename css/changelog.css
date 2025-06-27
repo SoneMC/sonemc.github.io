@@ -1,0 +1,351 @@
+/* Changelog Page Styles */
+
+/* Page Header */
+.page-header {
+    padding: 8rem 0 1rem;
+    text-align: center;
+    background: radial-gradient(ellipse at center, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+}
+
+.page-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease-out;
+}
+
+.page-title i {
+    color: var(--primary-color);
+    animation: pulse 2s infinite;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    animation: slideIn 1s ease-out 0.3s both;
+}
+
+/* Changelog Section */
+.changelog-section {
+    padding: 4rem 0;
+}
+
+.changelog-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+#plugin-filter {
+    padding: 0.75rem 1.5rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    color: var(--text-primary);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 200px;
+}
+
+#plugin-filter:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+}
+
+#plugin-filter option {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+/* Timeline */
+.changelog-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.changelog-timeline::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--gradient-primary);
+    border-radius: 1px;
+}
+
+.changelog-entry {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 80px;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.changelog-entry::before {
+    content: '';
+    position: absolute;
+    left: 21px;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background: var(--primary-color);
+    border: 3px solid var(--bg-primary);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.changelog-card {
+    background: var(--bg-secondary);
+    border-radius: 1rem;
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.changelog-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.1), transparent);
+    transition: left 0.8s;
+}
+
+.changelog-card:hover::before {
+    left: 100%;
+}
+
+.changelog-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: 0 15px 40px var(--shadow-color);
+}
+
+.changelog-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.changelog-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.changelog-title h3 {
+    color: var(--text-primary);
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.changelog-version {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--gradient-primary);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.changelog-date {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.changelog-date i {
+    color: var(--primary-color);
+}
+
+.changelog-type {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.changelog-type.major {
+    background: rgba(236, 72, 153, 0.2);
+    color: var(--secondary-color);
+    border: 1px solid rgba(236, 72, 153, 0.3);
+}
+
+.changelog-type.minor {
+    background: rgba(139, 92, 246, 0.2);
+    color: var(--primary-color);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.changelog-type.patch {
+    background: rgba(245, 158, 11, 0.2);
+    color: var(--accent-color);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.changelog-type.beta {
+    background: rgba(234, 179, 8, 0.2);
+    color: var(--beta-color);
+    border: 1px solid rgba(234, 179, 8, 0.3);
+}
+.changelog-type.alpha {
+    background: rgba(192, 132, 252, 0.15);
+    color: var(--alpha-color);
+    border: 1px solid rgba(192, 132, 252, 0.3);
+}
+
+.changelog-content {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.changelog-changes {
+    margin-top: 1.5rem;
+}
+
+.changelog-changes h4 {
+    color: var(--text-primary);
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.changelog-changes h4 i {
+    color: var(--primary-color);
+}
+
+.changelog-list {
+    list-style: none;
+    margin-left: 1rem;
+}
+
+.changelog-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.changelog-list li i {
+    color: var(--primary-color);
+    margin-top: 0.2rem;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+}
+
+.changelog-list.added li i { color: #10b981; }
+.changelog-list.changed li i { color: var(--accent-color); }
+.changelog-list.fixed li i { color: var(--secondary-color); }
+.changelog-list.removed li i { color: #ef4444; }
+
+.changelog-meta {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+}
+
+.changelog-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-muted);
+}
+
+.changelog-meta-item i {
+    color: var(--primary-color);
+}
+
+/* Empty State */
+.changelog-empty {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--text-muted);
+}
+
+.changelog-empty i {
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+.changelog-empty h3 {
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .changelog-timeline::before {
+        left: 15px;
+    }
+    
+    .changelog-entry {
+        padding-left: 50px;
+    }
+    
+    .changelog-entry::before {
+        left: 6px;
+        width: 16px;
+        height: 16px;
+    }
+    
+    .changelog-card {
+        padding: 1.5rem;
+    }
+    
+    .changelog-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .changelog-title {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .changelog-meta {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    #plugin-filter {
+        width: 100%;
+        max-width: 300px;
+    }
+}
