@@ -1,5 +1,33 @@
 export const pluginsData = [
     {
+        id: 'valentines',
+        name: 'Valentines',
+        version: '3.0.0-beta',
+        category: 'fun',
+        icon: 'fa-solid fa-heart',
+        description: 'Version 3 of Valentines plugin. With only-GUI based gameplay, more functions, higher version support and active development.',
+        features: [
+            'All in GUI',
+            'Leaderboards',
+            'Kiss, Hug, Like, Marry',
+            'And more...'
+        ],
+        stats: {
+            downloads: '0',
+            rating: '0',
+        },
+        featured: true,
+        downloadUrl: 'https://www.spigotmc.org/resources/valentines.126459/',
+        versions: [
+            {
+                version: '3.0.0-beta',
+                date: '2025-06-28',
+                changes: 'No changes. First release.',
+                downloadUrl: 'https://www.spigotmc.org/resources/valentines.126459/'
+            }
+        ]
+    },
+    {
         id: 'tictactoe',
         name: 'TicTacToe',
         version: '1.0.0-beta',
