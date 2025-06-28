@@ -46,12 +46,12 @@ export const siteConfig = {
     stats: [
         {
             icon: 'fas fa-download',
-            number: 'Unknown',
+            number: '~100',
             label: 'Downloads'
         },
         {
             icon: 'fas fa-puzzle-piece',
-            number: '3',
+            number: '4',
             label: 'Plugins'
         },
         {
