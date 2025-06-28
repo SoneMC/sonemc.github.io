@@ -1,5 +1,20 @@
 export const changelogData = [
-
+        {
+        id: 'valentines',
+        plugin: 'Valentines',
+        version: '3.0.0-beta',
+        date: '2025-06-28',
+        type: 'beta', // 'major', 'minor', 'patch', 'beta', 'alpha'
+        description: 'Version 3 of Valentines plugin. With only-GUI based gameplay, more functions, higher version support and active development.',
+        changes: {
+            added: [
+                'All in GUI',
+                'Leaderboards',
+                'Kiss, Hug, Like, Marry',
+                'And more...'
+            ]
+        },
+    },
         {
         id: 'coinflip',
         plugin: 'Coinflip',
