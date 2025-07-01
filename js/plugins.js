@@ -25,57 +25,70 @@ function loadPlugins(category = 'all') {
         return;
     }
     
-    const pluginsHTML = plugins.map(plugin => `
-        <div class="plugin-item" data-category="${plugin.category}" id="${plugin.id}">
-            <div class="plugin-main">
-                <div class="plugin-icon">
-                    <i class="${plugin.icon}"></i>
-                </div>
-                <div class="plugin-details">
-                    <h3>${plugin.name}</h3>
-                    <div class="plugin-version">
-                        <i class="fas fa-tag"></i>
-                        v${plugin.version}
+    const pluginsHTML = plugins.map(plugin => {
+        // Prepare categories
+        let categories = Array.isArray(plugin.category) ? [...plugin.category] : [plugin.category];
+        // Extract 'archive' if present
+        const archiveIndex = categories.indexOf('archive');
+        let archiveTag = '';
+        if (archiveIndex !== -1) {
+            archiveTag = `<div class="plugin-version plugin-archive-tag"><i class="fas fa-archive"></i> Archive</div>`;
+            categories.splice(archiveIndex, 1); // Remove 'archive' from categories
+        }
+        // The rest as normal
+        return `
+            <div class="plugin-item" data-category="${plugin.category}" id="${plugin.id}">
+                <div class="plugin-main">
+                    <div class="plugin-icon">
+                        <i class="${plugin.icon}"></i>
                     </div>
-                    <div class="plugin-category">${plugin.category}</div>
-                </div>
-            </div>
-            
-            <p class="plugin-description">${plugin.description}</p>
-            
-            <div class="plugin-features">
-                <h4><i class="fas fa-star"></i> Key Features</h4>
-                <ul>
-                    ${plugin.features.map(feature => `
-                        <li><i class="fas fa-check"></i> ${feature}</li>
-                    `).join('')}
-                </ul>
-            </div>
-            
-            <div class="plugin-footer">
-                <div class="plugin-meta">
-                    <div class="plugin-meta-item">
-                        <i class="fas fa-download"></i>
-                        <span>${plugin.stats.downloads} downloads</span>
-                    </div>
-                    <div class="plugin-meta-item">
-                        <i class="fas fa-star"></i>
-                        <span>${plugin.stats.rating}/5</span>
+                    <div class="plugin-details">
+                        <h3>${plugin.name}</h3>
+                        <div class="plugin-version-row">
+                            <div class="plugin-version">
+                                <i class="fas fa-tag"></i>
+                                v${plugin.version}
+                            </div>
+                            ${archiveTag}
+                            <div class="plugin-categories">
+                                ${categories.map(cat => `<span class="plugin-category">${cat}</span>`).join(' ')}
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="plugin-actions">
-                    <a href="${plugin.downloadUrl}" class="btn btn-primary btn-small" onclick="trackDownload('${plugin.id}')">
-                        <i class="fas fa-download"></i>
-                        Download Latest
-                    </a>
-                    <button class="btn btn-versions btn-small" onclick="showVersions('${plugin.id}')">
-                        <i class="fas fa-history"></i>
-                        All Versions
-                    </button>
+                
+                <p class="plugin-description">${plugin.description}</p>
+                
+                <div class="plugin-features">
+                    <h4><i class="fas fa-star"></i> Key Features</h4>
+                    <ul>
+                        ${plugin.features.map(feature => `
+                            <li><i class="fas fa-check"></i> ${feature}</li>
+                        `).join('')}
+                    </ul>
+                </div>
+                
+                <div class="plugin-footer">
+                    <div class="plugin-meta">
+                        <div class="plugin-meta-item">
+                            <i class="fas fa-download"></i>
+                            <span>${plugin.stats.downloads} downloads</span>
+                        </div>
+                    </div>
+                    <div class="plugin-actions">
+                        <a href="${plugin.downloadUrl}" class="btn btn-primary btn-small" onclick="trackDownload('${plugin.id}')">
+                            <i class="fas fa-download"></i>
+                            Download Latest
+                        </a>
+                        <button class="btn btn-versions btn-small" onclick="showVersions('${plugin.id}')">
+                            <i class="fas fa-history"></i>
+                            All Versions
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-    `).join('');
+        `;
+    }).join('');
     
     pluginsList.innerHTML = pluginsHTML;
     
@@ -119,12 +132,35 @@ function initFiltering() {
     loadPlugins(initialCategory);
 }
 
+window.showVersions = function(pluginId) {
+    const plugin = getPluginById(pluginId);
+    if (!plugin) return;
+    const modal = document.getElementById('version-modal');
+    const modalName = document.getElementById('modal-plugin-name');
+    const modalVersions = document.getElementById('modal-versions');
+
+    modalName.textContent = plugin.name + ' - Versions';
+    modalVersions.innerHTML = plugin.versions.map((v, i, arr) => `
+        <div class="version-item">
+            <div class="version-info">
+                <h4>${v.version}</h4>
+                <div class="version-date">${v.date || ''}</div>
+                <div class="version-changes">${v.changes || ''}</div>
+            </div>
+            <a href="${v.downloadUrl}" class="btn btn-primary btn-small" onclick="trackDownload('${plugin.id}', '${v.version}')">
+                <i class="fas fa-download"></i> Download
+            </a>
+        </div>
+        ${i < arr.length - 1 ? '<hr class="version-separator">' : ''}
+    `).join('');
+    modal.classList.add('active');
+};
+
 function initModal() {
     const modal = document.getElementById('version-modal');
     const closeBtn = document.getElementById('modal-close');
-    
     if (closeBtn) {
-        closeBtn.addEventListener('click', function() {
+        closeBtn.addEventListener('click', () => {
             modal.classList.remove('active');
         });
     }
@@ -143,45 +179,6 @@ function initModal() {
         }
     });
 }
-
-window.showVersions = function(pluginId) {
-    const plugin = pluginsData.find(p => p.id === pluginId);
-    if (!plugin) return;
-    
-    const modal = document.getElementById('version-modal');
-    const modalTitle = document.getElementById('modal-plugin-name');
-    const modalVersions = document.getElementById('modal-versions');
-    
-    modalTitle.textContent = `${plugin.name} - Version History`;
-    
-    const versionsHTML = plugin.versions.map(version => `
-        <div class="version-item">
-            <div class="version-info">
-                <h4>Version ${version.version}</h4>
-                <div class="version-date">
-                    <i class="fas fa-calendar"></i>
-                    ${new Date(version.date).toLocaleDateString()}
-                </div>
-                <div class="version-changes">${version.changes}</div>
-            </div>
-            <a href="${version.downloadUrl}" class="btn btn-primary btn-small" onclick="trackDownload('${pluginId}', '${version.version}')">
-                <i class="fas fa-download"></i>
-                Download
-            </a>
-        </div>
-    `).join('');
-    
-    modalVersions.innerHTML = versionsHTML;
-    modal.classList.add('active');
-};
-
-// for future
-//
-// window.trackDownload = function(pluginId, version = 'latest') {
-//     showNotification(`Starting download for ${pluginId} ${version}`, 'success');
-//     
-//     console.log(`Download tracked: ${pluginId} - ${version}`);
-// };
 
 window.trackDownload = function(pluginId, version = 'latest') {
     showNotification(`Downloading from SpigotMC `, 'success');
@@ -270,3 +267,7 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(style);
 });
+
+function getPluginById(pluginId) {
+    return pluginsData.find(plugin => plugin.id === pluginId);
+}

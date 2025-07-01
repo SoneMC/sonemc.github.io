@@ -5,7 +5,6 @@ export const footerConfig = {
             links: [
                 { text: 'Home', url: 'index.html', icon: 'fas fa-home' },
                 { text: 'Plugins', url: 'plugins.html', icon: 'fas fa-puzzle-piece' },
-                { text: 'Changelog', url: 'changelog.html', icon: 'fas fa-history' }
             ]
         },
         {
@@ -20,7 +19,7 @@ export const footerConfig = {
             links: [
                 { text: 'Modrinth', url: 'https://modrinth.com/user/SoneMC', icon: 'fa-solid fa-wrench', external: true },
                 { text: 'Spigot', url: 'https://www.spigotmc.org/members/sonemc2.2323927', icon: 'fa-solid fa-faucet', external: true },
-
+                { text: 'PCA', url: 'https://github.com/SoneMC/Plugin-Code-Archive', icon: 'fa fa-archive', external: true },
           ]
         }
     ],

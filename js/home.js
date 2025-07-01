@@ -80,10 +80,6 @@ function loadFeaturedPlugins() {
                     <i class="fas fa-download"></i>
                     <span>${plugin.stats.downloads}</span>
                 </div>
-                <div class="plugin-stat">
-                    <i class="fas fa-star"></i>
-                    <span>${plugin.stats.rating}</span>
-                </div>
             </div>
             
             <div class="plugin-actions">

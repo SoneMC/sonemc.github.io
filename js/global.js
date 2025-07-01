@@ -97,7 +97,7 @@ function initScrollAnimations() {
     }, observerOptions);
     
     const animatedElements = document.querySelectorAll(
-        '.stat-card, .plugin-card, .feature-card, .changelog-entry, .plugin-item'
+        '.stat-card, .plugin-card, .feature-card, .plugin-item'
     );
     
     animatedElements.forEach(el => {
