@@ -272,6 +272,15 @@
     display: inline-block;
 }
 
+.plugin-icon-archive {
+    font-size: 0;
+    width: 60px;
+    height: 60px;
+    background: url('https://raw.githubusercontent.com/SoneMC/images/main/Icons/SoneMC-plugins-archive_full.png') no-repeat center center;
+    background-size: contain;
+    display: inline-block;
+}
+
 .plugin-info h3 {
     color: var(--text-primary);
     margin-bottom: 0.25rem;

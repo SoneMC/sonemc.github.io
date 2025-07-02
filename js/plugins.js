@@ -26,16 +26,13 @@ function loadPlugins(category = 'all') {
     }
     
     const pluginsHTML = plugins.map(plugin => {
-        // Prepare categories
         let categories = Array.isArray(plugin.category) ? [...plugin.category] : [plugin.category];
-        // Extract 'archive' if present
         const archiveIndex = categories.indexOf('archive');
         let archiveTag = '';
         if (archiveIndex !== -1) {
             archiveTag = `<div class="plugin-version plugin-archive-tag"><i class="fas fa-archive"></i> Archive</div>`;
-            categories.splice(archiveIndex, 1); // Remove 'archive' from categories
+            categories.splice(archiveIndex, 1); 
         }
-        // The rest as normal
         return `
             <div class="plugin-item" data-category="${plugin.category}" id="${plugin.id}">
                 <div class="plugin-main">

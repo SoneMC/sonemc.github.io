@@ -129,6 +129,13 @@
     display: inline-block;
 }
 
+.plugin-icon img {
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+    display: inline-block;
+}
+
 .plugin-details h3 {
     color: var(--text-primary);
     margin-bottom: 0.5rem;

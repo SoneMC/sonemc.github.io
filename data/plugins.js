@@ -2,9 +2,9 @@ export const pluginsData = [
     {
         id: 'valentines3',
         name: 'Valentines3',
-        version: '3.0.0-beta',
+        version: '3.0.0',
         category: 'fun',
-        icon: 'active',
+        icon: 'archives',
         description: 'Version 3 of Valentines plugin. With only-GUI based gameplay, more functions, higher version support and active development.',
         features: [
             'All in GUI',
@@ -18,6 +18,12 @@ export const pluginsData = [
         featured: true,
         downloadUrl: 'https://modrinth.com/plugin/valentines3',
         versions: [
+            {
+                version: '(V3) 3.0.0',
+                date: '2025-07-02',
+                changes: 'No changelog specified.',
+                downloadUrl: 'https://modrinth.com/plugin/valentines3/version/3.0.0'
+            },
             {
                 version: '(V3) 3.0.0-beta',
                 date: '2025-06-28',
@@ -64,7 +70,7 @@ export const pluginsData = [
     {
         id: 'tictactoe',
         name: 'TicTacToe',
-        version: '1.0.0-beta',
+        version: '1.0.0',
         category: 'fun',
         icon: 'active',
         description: 'Working TicTacToe plugin with GUI and customizable settings. Just like on paper.',
@@ -80,6 +86,12 @@ export const pluginsData = [
         downloadUrl: 'https://modrinth.com/plugin/smc-tictactoe',
         versions: [
             {
+                version: '1.0.0',
+                date: '2025-07-02',
+                changes: 'No changelog specified.',
+                downloadUrl: 'https://modrinth.com/plugin/smc-tictactoe/version/1.0.0'
+            },
+            {
                 version: '1.0.0-beta',
                 date: '2025-06-22',
                 changes: 'No changes. First release.',
@@ -90,7 +102,7 @@ export const pluginsData = [
     {
         id: 'minesweeper',
         name: 'Minesweeper',
-        version: '1.0.0-alpha',
+        version: '1.0.0',
         category: 'fun',
         icon: 'active',
         description: 'Working Minesweeper plugin with 6x9 GUI with all functions like real minesweeper.',
@@ -107,6 +119,12 @@ export const pluginsData = [
         downloadUrl: 'https://modrinth.com/plugin/smc-minesweeper',
         versions: [
             {
+                version: '1.0.0',
+                date: '2025-07-02',
+                changes: 'No changelog specified.',
+                downloadUrl: 'https://modrinth.com/plugin/smc-minesweeper/version/1.0.0'
+            },
+            {
                 version: '1.0.0-alpha',
                 date: '2025-06-24',
                 changes: 'No changes. First release.',
@@ -117,7 +135,7 @@ export const pluginsData = [
     {
         id: 'coinflip',
         name: 'Coinflip',
-        version: '1.0.0-alpha',
+        version: '1.0.0',
         category: 'fun',
         icon: 'active',
         description: 'Simple coin flip game plugin. Alias "/cf", in-GUI "reflip" button.',
@@ -132,6 +150,12 @@ export const pluginsData = [
         downloadUrl: 'https://modrinth.com/plugin/smc-coinflip',
         versions: [
             {
+                version: '1.0.0',
+                date: '2025-07-02',
+                changes: 'No changelog specified.',
+                downloadUrl: 'https://modrinth.com/plugin/smc-coinflip/version/1.0.0'
+            },
+            {
                 version: '1.0.0-alpha',
                 date: '2025-06-26',
                 changes: 'No changes. First release.',
@@ -139,7 +163,19 @@ export const pluginsData = [
             }
         ]
     },
+
+
+
+
+
     // ARCHIVE
+    // ARCHIVE
+    // ARCHIVE
+
+
+
+
+
     {
         id: 'harvesting',
         name: 'Harvesting',
