@@ -62,8 +62,9 @@ export function loadFooter() {
                         </div>
                     `).join('')}
                 </div>
-                
+
                 <div class="footer-bottom">
+                    <p class="footer-description">${footerConfig.description}</p>
                     <div class="social-links">
                         ${footerConfig.social.map(social => `
                             <a href="${social.url}" class="social-link" target="_blank" rel="noopener" title="${social.name}">
@@ -214,4 +215,4 @@ const loadingStyles = `
 
 const styleSheet = document.createElement('style');
 styleSheet.textContent = loadingStyles;
-document.head.appendChild(styleSheet);
+document.head.appendChild(styleSheet);  
