@@ -4,7 +4,7 @@ export const pluginsData = [
         name: 'Valentines3',
         version: '3.0.0',
         category: 'fun',
-        icon: 'archives',
+        icon: 'active',
         description: 'Version 3 of Valentines plugin. With only-GUI based gameplay, more functions, higher version support and active development.',
         features: [
             'All in GUI',
