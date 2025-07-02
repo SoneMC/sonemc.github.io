@@ -1,5 +1,3 @@
-/* Homepage Styles */
-
 /* Hero Section */
 .hero {
     min-height: 100vh;
@@ -232,6 +230,9 @@
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .plugin-card::before {
@@ -285,6 +286,7 @@
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
     line-height: 1.6;
+    flex-grow: 1;
 }
 
 .plugin-stats {
@@ -308,6 +310,7 @@
 .plugin-actions {
     display: flex;
     gap: 0.5rem;
+    margin-top: auto;
 }
 
 .section-footer {

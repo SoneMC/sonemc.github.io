@@ -181,7 +181,7 @@ function initModal() {
 }
 
 window.trackDownload = function(pluginId, version = 'latest') {
-    showNotification(`Downloading from SpigotMC `, 'success');
+    showNotification(`Redirecting to Modrinth `, 'success');
 
     console.log(`Redirect tracked: ${pluginId} - ${version}`);
 };

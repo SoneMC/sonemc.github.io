@@ -32,7 +32,6 @@ function addDynamicSuggestions() {
     if (lastSegment) {
         const corrections = {
             'plugin': 'plugins.html',
-            'change': 'changelog.html',
             'home': 'index.html',
             'about': 'index.html#about'
         };

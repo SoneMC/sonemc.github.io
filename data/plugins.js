@@ -13,7 +13,7 @@ export const pluginsData = [
             'And more...'
         ],
         stats: {
-            downloads: '4 (+130)',
+            downloads: '*4 (+130)',
         },
         featured: true,
         downloadUrl: 'https://modrinth.com/plugin/valentines3',
@@ -74,16 +74,16 @@ export const pluginsData = [
             'Config.yml for customization'
         ],
         stats: {
-            downloads: '9',
+            downloads: '9*',
         },
         featured: true,
-        downloadUrl: 'https://www.spigotmc.org/resources/tictactoe.126376/download?version=595076',
+        downloadUrl: 'https://modrinth.com/plugin/smc-tictactoe',
         versions: [
             {
                 version: '1.0.0-beta',
                 date: '2025-06-22',
                 changes: 'No changes. First release.',
-                downloadUrl: 'https://www.spigotmc.org/resources/tictactoe.126376/download?version=595076'
+                downloadUrl: 'https://modrinth.com/plugin/smc-tictactoe/version/1.0.0-beta'
             }
         ]
     },
@@ -101,16 +101,16 @@ export const pluginsData = [
             '"Mines detection"'
         ],
         stats: {
-            downloads: '2',
+            downloads: '*2',
         },
         featured: true,
-        downloadUrl: 'https://www.spigotmc.org/resources/minesweeper.126377/download?version=595077',
+        downloadUrl: 'https://modrinth.com/plugin/smc-minesweeper',
         versions: [
             {
                 version: '1.0.0-alpha',
                 date: '2025-06-24',
                 changes: 'No changes. First release.',
-                downloadUrl: 'https://www.spigotmc.org/resources/minesweeper.126377/download?version=595077'
+                downloadUrl: 'https://modrinth.com/plugin/smc-minesweeper/version/1.0.0-alpha'
             }
         ]
     },
@@ -120,22 +120,22 @@ export const pluginsData = [
         version: '1.0.0-alpha',
         category: 'fun',
         icon: 'active',
-        description: 'Simple coin flip game plugin. Alias "/cf", in-GUI "reflip" button.ㅤㅤㅤㅤㅤㅤㅤ',
+        description: 'Simple coin flip game plugin. Alias "/cf", in-GUI "reflip" button.',
         features: [
             'GUI-based gameplay',
             'Heads or Tails',
         ],
         stats: {
-            downloads: '3',
+            downloads: '*3',
         },
         featured: true,
-        downloadUrl: 'https://www.spigotmc.org/resources/coinflip.126409/download?version=595220',
+        downloadUrl: 'https://modrinth.com/plugin/smc-coinflip',
         versions: [
             {
                 version: '1.0.0-alpha',
                 date: '2025-06-26',
                 changes: 'No changes. First release.',
-                downloadUrl: 'https://www.spigotmc.org/resources/coinflip.126409/download?version=595220'
+                downloadUrl: 'https://modrinth.com/plugin/smc-coinflip/version/1.0.0-alpha'
             }
         ]
     },
@@ -154,7 +154,7 @@ export const pluginsData = [
             'Crop Filter'
         ],
         stats: {
-            downloads: '23',
+            downloads: '*23',
         },
         featured: true,
         downloadUrl: 'https://modrinth.com/plugin/harvesting/version/1.0',
@@ -183,7 +183,7 @@ export const pluginsData = [
             'Sound effects and more...'
         ],
         stats: {
-            downloads: '53',
+            downloads: '*53',
         },
         featured: true,
         downloadUrl: 'https://modrinth.com/plugin/smc-letsplay',
@@ -223,7 +223,7 @@ export const pluginsData = [
         'Fully Customizable'
     ],
     stats: {
-        downloads: '59',
+        downloads: '*59',
     },
     featured: true,
     downloadUrl: 'https://modrinth.com/plugin/mobstatus',

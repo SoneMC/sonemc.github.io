@@ -1,8 +1,6 @@
 // Global site configuration
 export const siteConfig = {
     name: 'SoneMC',
-    tagline: 'Crafting amazing Minecraft plugins with passion',
-    description: 'SoneMC is a passionate Minecraft plugin developer creating innovative and high-quality plugins for the Minecraft community.',
     author: 'SoneMC',
     contact: {
         github: 'https://github.com/somemc',
@@ -13,17 +11,12 @@ export const siteConfig = {
     // About section content
     about: {
         title: 'About SoneMC',
-        description: `Hey there! Welcome to SoneMC, where I'm trying to make plugins for every Minecraft server out there. My goal is to create plugins that are focused on fun, moderation and performance. I hope that you will find something useful here!
+        description: `Hey there! Welcome to SoneMC, where I'm trying to make plugins for fun. My focus is on "Fun" and GUI-based as you can see in every plugin.
 
-        Im trying to make those plugins as easy to use as possible and highly configurable at the same time. Every plugin is updated regularly to fix bugs and add new features. And of course, all plugins are updated so they work with newer Minecraft versions.
-        If you have any questions, suggestions or just want to chat, feel free to reach out to me on Discord. I love hearing from the community and I'm always open to feedback!`,
+        Every plugin will get an update atleast once per 2 weeks to keep it stable and not boring. If you want to support me, just download one plugin, play it and rate it. And if you run
+        into any problem, just contact me on Discord!`,
         
         features: [
-            {
-                icon: 'fas fa-code',
-                title: 'Clean Code',
-                description: 'Modern code with best practices for easy maintenance'
-            },
             {
                 icon: 'fas fa-rocket',
                 title: 'Performance',
@@ -34,11 +27,6 @@ export const siteConfig = {
                 title: 'Community',
                 description: 'If you run into any issues, you can always reach out'
             },
-            {
-                icon: 'fas fa-tools',
-                title: 'Support',
-                description: 'Regular updates and support for the latest Minecraft versions'
-            }
         ]
     },
     
