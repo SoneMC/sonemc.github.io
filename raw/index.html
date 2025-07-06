@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoneMC - Raw</title>
+    <meta name="description" content="SoneMC Team develops premium Minecraft plugins including Plugin1 and Plugin2. Download high-quality server plugins with advanced features and regular updates.">
+    <meta name="keywords" content="minecraft plugins, spigot plugins, bukkit plugins, minecraft server, economy plugin, protection plugin, SoneMC">
+    <meta name="author" content="SoneMC Team">
+    <meta name="robots" content="index, follow">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#8b5cf6"> 
+
+    <meta name="description" content="SoneMC - The peak in Minecraft plugins">
+    <meta name="keywords" content="Minecraft, plugins, SoneMC, Wejkey, development, servers, downloads, rpg, roleplay, map, gaming, community, Java, Bukkit, Spigot, Paper, Purpur, tools, moderation, fast, safe, 1.18, 1.19, 1.20, 1.21">
+    <meta name="author" content="SoneMC Plugins">
+    <meta name="robots" content="index, follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="copyright" content="© 2025 SoneMC. All rights reserved.">
+
+    <meta property="og:title" content="SoneMC - Minecraft Plugins">
+    <meta property="og:description" content="Developing some (maybe) useful Minecraft plugins!">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/215273978?v=4">
+    <meta property="og:url" content="https://sonemcpl.pages.dev/raw">
+    <meta property="og:type" content="website">
+    
+    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/215273978?v=4">
+    <link rel="apple-touch-icon" href="https://avatars.githubusercontent.com/u/215273978?v=4">
+
+    <link rel="stylesheet" href="/styles/raw.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navigation">
+            <button class="nav-btn active" data-section="tou" onclick="showSection('tou')">Terms of Use</button>
+            <button class="nav-btn" data-section="pca" onclick="showSection('pca')">PCA</button>
+            <button class="nav-btn" data-section="disclaimer" onclick="showSection('disclaimer')">Disclaimer</button>
+        </nav>
+
+        <div id="tou" class="section active">
+            <h1>Terms of Use</h1>
+            <pre id="tou-content"></pre>
+        </div>
+
+        <div id="pca" class="section">
+            <h1>PCA</h1>
+            <pre id="pca-content"></pre>
+        </div>
+
+        <div id="disclaimer" class="section">
+            <h1>Disclaimer</h1>
+            <pre id="disclaimer-content"></pre>
+        </div>
+    </div>
+
+    <script src="data/tou.js"></script>
+    <script src="data/pca.js"></script>
+    <script src="data/disclaimer.js"></script>
+    <script src="/scripts/raw.js"></script>
+</body>
+</html>
