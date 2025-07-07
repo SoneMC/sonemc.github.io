@@ -17,6 +17,11 @@ const footerData = {
                     text: "SpigotMC",
                     url: "https://www.spigotmc.org/members/sonemc2.2323927/",
                     external: true
+                },
+                {
+                    text: "Hangar",
+                    url: "https://hangar.papermc.io/SoneMC/SoneRPG",
+                    external: true
                 }
             ]
         },
