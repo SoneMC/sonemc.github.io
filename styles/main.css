@@ -323,10 +323,12 @@
 
 .changelog-description {
     color: var(--text-secondary);
-    line-height: 1.6;
+    line-height: 1.4;
     white-space: pre-line;
     word-wrap: break-word;
     max-width: 600px;
+    margin: 0;
+    padding: 0;
 }
 
 .changelog-download-btn {
