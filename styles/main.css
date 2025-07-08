@@ -302,6 +302,21 @@
     vertical-align: top;
 }
 
+.changelog-table td:first-child {
+    vertical-align: top;
+    padding-top: 1rem;
+}
+
+.changelog-table td:nth-child(2) {
+    vertical-align: top;
+    padding-top: 1rem;
+}
+
+.changelog-table td:nth-child(3) {
+    vertical-align: top;
+    padding-top: 1rem;
+}
+
 .changelog-table tr:last-child td {
     border-bottom: none;
 }
