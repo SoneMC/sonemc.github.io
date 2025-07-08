@@ -302,19 +302,8 @@
     vertical-align: top;
 }
 
-.changelog-table td:first-child {
-    vertical-align: top;
-    padding-top: 1rem;
-}
-
 .changelog-table td:nth-child(2) {
-    vertical-align: top;
-    padding-top: 1rem;
-}
-
-.changelog-table td:nth-child(3) {
-    vertical-align: top;
-    padding-top: 1rem;
+    padding: 1rem 1rem 1rem 0;
 }
 
 .changelog-table tr:last-child td {
@@ -344,8 +333,6 @@
     max-width: 600px;
     margin: 0;
     padding: 0;
-    display: inline-block;
-    vertical-align: top;
 }
 
 .changelog-download-btn {
