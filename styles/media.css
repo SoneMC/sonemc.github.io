@@ -45,6 +45,11 @@
     .changelog-table td {
         padding: 0.8rem;
     }
+    
+    .changelog-description {
+        max-width: none;
+        font-size: 0.85rem;
+    }
 }
 @media (max-width: 768px) {
     .container {
