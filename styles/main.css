@@ -216,7 +216,6 @@
     transform: translateY(-1px);
 }
 
-/* Changelog Page */
 .changelog-header {
     padding: 2rem 0;
     display: flex;
@@ -302,8 +301,19 @@
     vertical-align: top;
 }
 
+.changelog-table td:first-child {
+    vertical-align: top;
+    padding-top: 1rem;
+}
+
 .changelog-table td:nth-child(2) {
-    padding: 1rem 1rem 1rem 0;
+    vertical-align: top;
+    padding-top: 1rem;
+}
+
+.changelog-table td:nth-child(3) {
+    vertical-align: top;
+    padding-top: 1rem;
 }
 
 .changelog-table tr:last-child td {
@@ -327,8 +337,7 @@
 
 .changelog-description {
     color: var(--text-secondary);
-    line-height: 1.6;
-    white-space: pre-line;
+    line-height: 1.4;
     word-wrap: break-word;
     max-width: 600px;
     margin: 0;

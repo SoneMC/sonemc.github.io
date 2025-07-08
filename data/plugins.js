@@ -4,64 +4,26 @@ const pluginsData = {
             id: 'sonerpg',
             name: 'SoneRPG',
             description: 'Skyrim-themed (RPG-like) plugin with races, quests, shops, smithing, skills & lot more..',
-            currentVersion: '1.0.0-B1_Early',
+            currentVersion: '1.0.0-B2_Early',
             mcVersions: ['1.20.x'],
-            downloadUrl: 'https://github.com/SoneMC/SoneRPG/releases/download/1.0.0-B1_Early/SoneRPG_1.0.0-B1_Early.jar',
+            downloadUrl: 'https://github.com/SoneMC/SoneRPG/releases/download/1.0.0-B2_Early/SoneRPG_1.0.0-B2_Early.jar',
             changelog: [
+                {
+                    version: '1.0.0-B2_Early',
+                    date: '2025-07-08',
+                    githubUrl: 'https://github.com/SoneMC/SoneRPG/releases/tag/1.0.0-B2_Early',
+                    downloadUrl: 'https://github.com/SoneMC/SoneRPG/releases/download/1.0.0-B2_Early/SoneRPG_1.0.0-B2_Early.jar',
+                    description: `
+                    ADDED | Stamina & Stamina skill upgrade<br>
+                          - Stamina is draining when: Attacking mobs with weapon (-10%), attacking mobs with hand (-1%), mobs wont be hurt when player's stamina is 0%, player will be slowed down when stamina is 0%<br><br>
+                    FIXED | Sometimes mob healed, when full HP`
+                },
                 {
                     version: '1.0.0-B1_Early',
                     date: '2025-07-07',
                     githubUrl: 'https://github.com/SoneMC/SoneRPG/releases/tag/1.0.0-B1_Early',
                     downloadUrl: 'https://github.com/SoneMC/SoneRPG/releases/download/1.0.0-B1_Early/SoneRPG_1.0.0-B1_Early.jar',
-const pluginsData = {
-    plugins: [
-        {
-            id: 'sonerpg',
-            name: 'SoneRPG',
-            description: 'Skyrim-themed (RPG-like) plugin with races, quests, shops, smithing, skills & lot more..',
-            currentVersion: '1.0.0-B1_Early',
-            mcVersions: ['1.20.x'],
-            downloadUrl: 'https://github.com/SoneMC/SoneRPG/releases/download/1.0.0-B1_Early/SoneRPG_1.0.0-B1_Early.jar',
-            changelog: [
-                {
-                    version: '1.0.0-B1_Early',
-                    date: '2025-07-07',
-                    githubUrl: 'https://github.com/SoneMC/SoneRPG/releases/tag/1.0.0-B1_Early',
-                    downloadUrl: 'https://github.com/SoneMC/SoneRPG/releases/download/1.0.0-B1_Early/SoneRPG_1.0.0-B1_Early.jar',
-const pluginsData = {
-    plugins: [
-        {
-            id: 'sonerpg',
-            name: 'SoneRPG',
-            description: 'Skyrim-themed (RPG-like) plugin with races, quests, shops, smithing, skills & lot more..',
-            currentVersion: '1.0.0-B1_Early',
-            mcVersions: ['1.20.x'],
-            downloadUrl: 'https://github.com/SoneMC/SoneRPG/releases/download/1.0.0-B1_Early/SoneRPG_1.0.0-B1_Early.jar',
-            changelog: [
-                {
-                    version: '1.0.0-B1_Early',
-                    date: '2025-07-07',
-                    githubUrl: 'https://github.com/SoneMC/SoneRPG/releases/tag/1.0.0-B1_Early',
-                    downloadUrl: 'https://github.com/SoneMC/SoneRPG/releases/download/1.0.0-B1_Early/SoneRPG_1.0.0-B1_Early.jar',
-                    description: `First public version. There may be a lot of problems but on testing, everything was fine.
-
-Keep in mind that from this version, there will be even more updates with more "drastic" changes.
-
-If you want to test this plugin, feel free. If you want to use it, use it, but I recommend to use it for fun/testing and not for public servers.`
-                }
-            ]
-        },
-    ]
-};
-
-window.pluginsData = pluginsData; q
-                }
-            ]
-        },
-    ]
-};
-
-window.pluginsData = pluginsData;u
+                    description: 'First public version. There may be a lot of problems but on testing, everything was fine. Keep in mind that fron this version, there will be even more updates with more "drastic" changes. If you want to test this plugin, feel free. If you want to use it, use it, but I recommend to use it for fun/testing and not for public servers'
                 }
             ]
         },
