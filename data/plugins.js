@@ -4,10 +4,22 @@ const pluginsData = {
             id: 'sonerpg',
             name: 'SoneRPG',
             description: 'Skyrim-themed (RPG-like) plugin with races, quests, shops, smithing, skills & lot more..',
-            currentVersion: '1.0.0-B2_Early',
+            currentVersion: '1.0.0-B3_Early',
             mcVersions: ['1.20.x'],
-            downloadUrl: 'https://github.com/SoneMC/SoneRPG/releases/download/1.0.0-B2_Early/SoneRPG_1.0.0-B2_Early.jar',
+            downloadUrl: 'https://github.com/SoneMC/SoneRPG/releases/download/1.0.0-B3_Early/SoneRPG_1.0.0-B3_Early.jar',
             changelog: [
+                {
+                    version: '1.0.0-B3_Early',
+                    date: '2025-07-10',
+                    githubUrl: 'https://github.com/SoneMC/SoneRPG/releases/tag/1.0.0-B3_Early',
+                    downloadUrl: 'https://github.com/SoneMC/SoneRPG/releases/download/1.0.0-B3_Early/SoneRPG_1.0.0-B3_Early.jar',
+                    description: `
+                    ADDED | Update-checker<br>
+                    ADDED | Better help command (/sonerpg help)<br>
+                    FIXED | Performance<br>
+                    CHANGED | Attack Particles<br>
+                    REMOVED | Few items from shop`
+                },
                 {
                     version: '1.0.0-B2_Early',
                     date: '2025-07-08',
