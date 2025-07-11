@@ -6,7 +6,7 @@ const pluginsData = {
             description: 'Skyrim-themed (RPG-like) plugin with races, quests, shops, smithing, skills & lot more..',
             currentVersion: '1.0.0-B3_Early',
             mcVersions: ['1.20.x'],
-            downloadUrl: 'https://modrinth.com/plugin/sonerpg',
+            downloadUrl: 'https://modrinth.com/plugin/sonerpg#download',
             changelog: [
                 {
                     version: '1.0.0-B3_Early',
