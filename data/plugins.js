@@ -4,10 +4,19 @@ const pluginsData = {
             id: 'sonerpg',
             name: 'SoneRPG',
             description: 'Skyrim-themed (RPG-like) plugin with races, quests, shops, smithing, skills & lot more..',
-            currentVersion: '1.0.0-B3_Early',
+            currentVersion: '1.0.0-B4_Early',
             mcVersions: ['1.20.x'],
             downloadUrl: 'https://modrinth.com/plugin/sonerpg#download',
             changelog: [
+                {
+                    version: '1.0.0-B4_Early',
+                    date: '2025-07-10',
+                    githubUrl: 'https://github.com/SoneMC/SoneRPG/releases/tag/1.0.0-B3_Early',
+                    downloadUrl: 'https://modrinth.com/plugin/sonerpg/version/1.0.0-B4_Early',
+                    description: `
+                    CHANGED | Stamina updating<br>
+                    CHANGED | Stamina regeneration from 0-100% will take only 7 seconds<br>`
+                },
                 {
                     version: '1.0.0-B3_Early',
                     date: '2025-07-10',
