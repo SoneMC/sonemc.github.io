@@ -4,10 +4,21 @@ const pluginsData = {
             id: 'sonerpg',
             name: 'SoneRPG',
             description: 'Skyrim-themed (RPG-like) plugin with races, quests, shops, smithing, skills & lot more..',
-            currentVersion: '1.0.0-B4_Early',
+            currentVersion: '1.0.0-B5_Early',
             mcVersions: ['1.20.x'],
             downloadUrl: 'https://modrinth.com/plugin/sonerpg#download',
             changelog: [
+                {
+                    version: '1.0.0-B5_Early',
+                    date: '2025-07-22',
+                    githubUrl: 'https://github.com/SoneMC/SoneRPG/releases/tag/1.0.0-B5_Early',
+                    downloadUrl: 'https://modrinth.com/plugin/sonerpg/version/1.0.0-B5_Early',
+                    description: `
+                    ADDED | More quests<br>
+                    ADDED | Administration command "/rpgadmin" (note: No stamina draining while attacking mobs, crafting and upgradint without need to have higher level.)<br>
+                    CHANGED | Forging & Leveling<br>
+                    FIXED | Performance<br>`
+                },
                 {
                     version: '1.0.0-B4_Early',
                     date: '2025-07-10',
