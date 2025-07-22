@@ -17,7 +17,7 @@ Please note:
 - These archived projects are provided "as is" without any warranty. SoneMC is not responsible for any damages or issues resulting from their use.
 
 
-Plugin  | Valentines - # - Ended on June May 17, 2025 - Archived June 1, 2025
+Plugin  | Valentines - # - Ended on June May 17, 2025 - Archived June 1, 2025*
 Plugin  | LetsPlay - # - Ended on June May 15, 2025 - Archived June 1, 2025
 Website | sonemc - https://github.com/SoneMC/Plugin-Code-Archive/tree/main/sonemc - Ended on April 19, 2025 - Archived June 1, 2025
 Website | sonemc1 - https://github.com/SoneMC/Plugin-Code-Archive/tree/main/sonemc1 - Ended on June 10, 2025 - Archived June 1, 2025
@@ -27,6 +27,7 @@ Plugin  | Coinflip - https://github.com/SoneMC/Plugin-Code-Archive/tree/main/plu
 Plugin  | Minesweeper - https://github.com/SoneMC/Plugin-Code-Archive/tree/main/plugins/Minesweeper_1.0.0 - Ended on July 07, 2025 - Archived July 07, 2025
 Plugin  | TicTacToe - https://github.com/SoneMC/Plugin-Code-Archive/tree/main/plugins/TicTacToe_1.0.0 - Ended on July 07, 2025 - Archived July 07, 2025
 
+* some plugins may be unarchived in future
 
-Last updated: July 11, 2025
+Last updated: July 22, 2025
 `;
