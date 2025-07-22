@@ -17,7 +17,8 @@ const pluginsData = {
                     ADDED | More quests<br>
                     ADDED | Administration command "/rpgadmin" (note: No stamina draining while attacking mobs, crafting and upgradint without need to have higher level.)<br>
                     CHANGED | Forging & Leveling<br>
-                    FIXED | Performance<br>`
+                    FIXED | Performance<br>
+                    NOTE | Default weapon & armor crafting is disabled, it can be only crafted using in-plugin function`
                 },
                 {
                     version: '1.0.0-B4_Early',
