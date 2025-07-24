@@ -49,11 +49,6 @@ const footerData = {
                     external: true
                 },
                 {
-                    text: "PCA",
-                    url: "https://sonemcpl.pages.dev/raw/#pca",
-                    external: true
-                },
-                {
                     text: "Disclaimer",
                     url: "https://sonemcpl.pages.dev/raw/#disclaimer",
                     external: true
