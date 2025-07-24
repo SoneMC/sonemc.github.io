@@ -3,10 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('tou-content').textContent = touContent;
     }
     
-    if (typeof pcaContent !== 'undefined') {
-        document.getElementById('pca-content').textContent = pcaContent;
-    }
-    
     if (typeof disclaimerContent !== 'undefined') {
         document.getElementById('disclaimer-content').textContent = disclaimerContent;
     }
@@ -18,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function handleHashChange() {
     const hash = window.location.hash.substring(1); 
-    const validSections = ['tou', 'pca', 'disclaimer'];
+    const validSections = ['tou', 'disclaimer'];
     
     if (hash && validSections.includes(hash)) {
         showSection(hash);
